@@ -1,0 +1,28 @@
+# Source images - never committed
+decks/
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.heic
+**/*.HEIC
+
+# Local caches
+data_cache/
+
+# Environment
+.env
+
+# Build output
+dist/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
