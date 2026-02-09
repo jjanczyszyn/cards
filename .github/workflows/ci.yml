@@ -31,13 +31,16 @@ jobs:
           python-version: '3.12'
 
       - run: npm ci
-      - run: pip install pytest
+      - run: pip install pytest pydantic Pillow
 
       - name: Run frontend tests
         run: npx vitest run
 
       - name: Run Python tests
         run: python -m pytest tests/ -v
+
+      - name: Type check
+        run: npx tsc -b
 
       - name: Build site
         run: npx vite build
